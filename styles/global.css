@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+}
+
+:root{
+    --black: #0d114f;
+    --white: #fafafa;
+    --red: #e83f5b;
+    --light-blue: #e0ecff;
+    --blue: #3485ff;
+    --bg-color: #f6faff;
+    --overlay: #040911;
+    --icons: #a5b0c1;
+
+    --grey-dark: #4d5e77;
+    --grey-blue: #a1b2cd;
+    --grey-light: #e5eaf1;
+
+    --fonte-padrao: 'Open Sans', sans-serif;
+    --fonte-secundaria: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+body, button, input, textarea{
+    /* Intervalo de tamanho */
+    font-size: clamp(14px, 1.6rem, 2vw);
+    /* não importa o quão pequena for a tela, a fonte terá 14px no mínimo de tamanho */
+    /* 1.6 rem é o tamanho padrão em uma tela normal */
+    /* não importa o quão grande for a tela, a fonte terá 2vw no máximo de tamanho */
+    font-family: var(--fonte-padrao);
+}
+
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
